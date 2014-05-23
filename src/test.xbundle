@@ -2,18 +2,14 @@
   <metadata/>
   <course number="CA.1" display_name="Collaborative Assessment" semester="1" org="MITx">
     <chapter display_name="Introduction" url_name="Introduction">
-      <sequential display_name="Introduction to Collaborative Assessment" url_name="Introduction_to_Collaborative_Assessment">
-        <vertical url_name="Introduction_to_Collaborative_Assessment_vertical">
-          <html display_name="intro" url_name="intro">
-            <p>
+      <html display_name="intro" url_name="intro">
+        <p>
 Welcome to the collaborative assessment demo! </p>
-          </html>
-        </vertical>
-      </sequential>
+      </html>
     </chapter>
     <chapter display_name="Form1" url_name="Form1">
-      <sequential display_name="Example problems" url_name="Example_problems">
-        <vertical url_name="Example_problems_vertical">
+      <sequential display_name="Part1" url_name="Part1">
+        <vertical url_name="Part1_vertical">
           <problem display_name="String response" url_name="String_response">
             <text>
               <p>
@@ -45,7 +41,7 @@ Explanations can also be provided inside: </p>
             </text>
           </problem>
         </vertical>
-        <vertical url_name="Example_problems_verticalx">
+        <vertical url_name="Part1_verticalx">
           <problem display_name="Multiple choice single answer" url_name="Multiple_choice_single_answer">
             <text>
               <p>
@@ -135,7 +131,7 @@ aset = [ 'Cobol',
             </text>
           </problem>
         </vertical>
-        <vertical url_name="Example_problems_verticalxx">
+        <vertical url_name="Part1_verticalxx">
           <problem display_name="Numerical response" url_name="Numerical_response">
             <text>
               <p>
@@ -202,7 +198,7 @@ For the stretched states the formula is unnecessary: all the angular momenta are
             </text>
           </problem>
         </vertical>
-        <vertical url_name="Example_problems_verticalxxx">
+        <vertical url_name="Part1_verticalxxx">
           <problem display_name="Custom response" url_name="Custom_response">
             <text>
               <p>
@@ -237,7 +233,7 @@ Enter two numbers which add up to 10: </p>
             </text>
           </problem>
         </vertical>
-        <vertical url_name="Example_problems_verticalxxxx">
+        <vertical url_name="Part1_verticalxxxx">
           <problem display_name="Formula response" url_name="Formula_response">
             <text>
               <p>
@@ -263,8 +259,8 @@ Use <tt class="tt">^</tt> for exponentiation, e.g. <tt class="tt">x^2</tt> denot
           </problem>
         </vertical>
       </sequential>
-      <sequential display_name="Video and text" url_name="Video_and_text">
-        <vertical url_name="Video_and_text_vertical">
+      <sequential display_name="Part2" url_name="Part2">
+        <vertical url_name="Part2_vertical">
           <html display_name="Sample show-hide text section" url_name="Sample_show-hide_text_section">
             <p>
               <big class="xxlarge">Sample show-hide text section</big>
@@ -306,9 +302,21 @@ Standard mathematical functions may be employed, e.g. [mathjaxinline]{\tt sin(x)
             </p>
           </html>
         </vertical>
-        <vertical url_name="Video_and_text_verticalx">
+        <vertical url_name="Part2_verticalx">
           <video url_name="week0_intro" display_name="Introduction to 6.SFMx" youtube="1.0:VfOMvuHcJi0"/>
         </vertical>
+      </sequential>
+    </chapter>
+    <chapter display_name="TIPI" url_name="TIPI">
+      <sequential display_name="Personality Test" url_name="Personality_Test">
+        <problem display_name="TIPI" url_name="problem_TIPI">
+          <text>
+            <p>
+Here are a number of personality traits that may or may not apply to you. Please select the number next to each statement to indicate the extent to which you agree or disagree with that statement. You should rate the extent to which the pair of traits applies to you, even if one characteristic applies more strongly than the other. </p>
+            <p>
+I see myself as: </p>
+          </text>
+        </problem>
       </sequential>
     </chapter>
   </course>

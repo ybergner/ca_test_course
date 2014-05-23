@@ -1,4 +1,5 @@
 <course number="CA.1" display_name="Collaborative Assessment" semester="1" org="MITx">
   <chapter url_name="Introduction"/>
   <chapter url_name="Form1"/>
+  <chapter url_name="TIPI"/>
 </course>
