@@ -14,49 +14,300 @@ Welcome to the collaborative assessment demo! </p>
     <chapter display_name="Form1" url_name="Form1">
       <sequential display_name="Example problems" url_name="Example_problems">
         <vertical url_name="Example_problems_vertical">
-          <p>
-edXproblemTIPI </p>
-          <p>
-Here are a number of personality traits that may or may not apply to you. Please select the number next to each statement to indicate the extent to which you agree or disagree with that statement. You should rate the extent to which the pair of traits applies to you, even if one characteristic applies more strongly than the other. </p>
-          <p>
-I see myself as: </p>
-          <ul class="itemize">
-            <li>
+          <problem display_name="String response" url_name="String_response">
+            <text>
               <p>
-                <p style="display:inline">
-                  <tt class="tt">5.2&#xA0;&#xA0;&#xA0;</tt>
-                </p>
-                <optionresponse inline="1">
-                  <optioninput options="('noneType','int','float')" correct="float" inline="1"/>
-                </optionresponse>
-              </p>
-            </li>
-            <li>
+What state is Detroit in? </p>
               <p>
-                <p style="display:inline">
-                  <tt class="tt">3/2&#xA0;&#xA0;&#xA0;</tt>
-                </p>
-                <optionresponse inline="1">
-                  <optioninput options="('noneType','int','float')" correct="int" inline="1"/>
-                </optionresponse>
+                <stringresponse answer="Michigan" type="">
+                  <textline/>
+                </stringresponse>
               </p>
-            </li>
-            <li>
               <p>
-                <p style="display:inline">
-                  <tt class="tt">1+[]&#xA0;&#xA0;&#xA0;</tt>
-                </p>
-                <optionresponse inline="1">
-                  <optioninput options="('noneType','int','float')" correct="noneType" inline="1"/>
-                </optionresponse>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+Explanations can also be provided inside: </p>
+                    <pre>
+\begin{edXsolution}
+... 
+\end{edXsolution}
+</pre>
+                  </font>
+                </solution>
               </p>
-            </li>
-          </ul>
-          <p>
-            <span class="gitlink" style="float:right">
-              <a href="https://github.com/mitocw/content-mit-latex2edx-demo/blob/master/src/form1.tex#L22">Source TeX</a>
-            </span>
-          </p>
+              <p>
+                <span class="gitlink" style="float:right">
+                  <a href="https://github.com/mitocw/content-mit-latex2edx-demo/blob/master/src/form1.tex#L45">Source TeX</a>
+                </span>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical url_name="Example_problems_verticalx">
+          <problem display_name="Multiple choice single answer" url_name="Multiple_choice_single_answer">
+            <text>
+              <p>
+What color is the sky on a clear sunny day? </p>
+              <script type="text/python" system_path="python_lib">
+
+aset = [ 'Red',
+         'Green',
+         'Blue',
+         'Black',
+      ]
+
+(ans1,ans2,ans3,ans4) = aset
+
+</script>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="false" name="1">
+                      <text> $ans1</text>
+                    </choice>
+                    <choice correct="false" name="2">
+                      <text> $ans2</text>
+                    </choice>
+                    <choice correct="true" name="3">
+                      <text> $ans3</text>
+                    </choice>
+                    <choice correct="false" name="4">
+                      <text> $ans4</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <span class="gitlink" style="float:right">
+                  <a href="https://github.com/mitocw/content-mit-latex2edx-demo/blob/master/src/form1.tex#L76">Source TeX</a>
+                </span>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Multiple choice multiple answers" url_name="Multiple_choice_multiple_answers">
+            <text>
+              <p>
+What are the best computer programming language? Choose <em>all</em> which apply: </p>
+              <script type="text/python" system_path="python_lib">
+
+aset = [ 'Cobol',
+         'Pascal',
+         'Python',
+         'C++',
+         'Clu',
+         'Forth',
+      ]
+
+(ans1,ans2,ans3,ans4,ans5,ans6) = aset
+
+</script>
+              <p>
+                <choiceresponse>
+                  <checkboxgroup direction="vertical">
+                    <choice correct="false" name="1">
+                      <text> $ans1</text>
+                    </choice>
+                    <choice correct="false" name="2">
+                      <text> $ans2</text>
+                    </choice>
+                    <choice correct="true" name="3">
+                      <text> $ans3</text>
+                    </choice>
+                    <choice correct="true" name="4">
+                      <text> $ans4</text>
+                    </choice>
+                    <choice correct="false" name="5">
+                      <text> $ans5</text>
+                    </choice>
+                    <choice correct="false" name="6">
+                      <text> $ans6</text>
+                    </choice>
+                  </checkboxgroup>
+                </choiceresponse>
+              </p>
+              <p>
+                <span class="gitlink" style="float:right">
+                  <a href="https://github.com/mitocw/content-mit-latex2edx-demo/blob/master/src/form1.tex#L103">Source TeX</a>
+                </span>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical url_name="Example_problems_verticalxx">
+          <problem display_name="Numerical response" url_name="Numerical_response">
+            <text>
+              <p>
+                <h2>Example of numerical response</h2>
+              </p>
+              <p>
+What is the numerical value of [mathjaxinline]\pi[/mathjaxinline]? </p>
+              <p>
+                <numericalresponse answer="3.14159">
+                  <textline>
+                    <responseparam type="tolerance" default="0.01"/>
+                  </textline>
+                </numericalresponse>
+              </p>
+              <p>
+                <span class="gitlink" style="float:right">
+                  <a href="https://github.com/mitocw/content-mit-latex2edx-demo/blob/master/src/form1.tex#L122">Source TeX</a>
+                </span>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Numerical response with inline labels" url_name="Numerical_response_with_inline_labels">
+            <text>
+              <p>
+Numerical response questions can have inline labels, both before and after the input box: </p>
+              <ul class="itemize">
+                <li>
+                  <p>
+                    <p style="display:inline">[mathjaxinline]^2P_{3/2}~ ~ F=3[/mathjaxinline] [mathjaxinline]~ ~ ~ ~ ~  g=[/mathjaxinline] </p>
+                    <numericalresponse inline="1" answer="0.66666">
+                      <textline inline="1">
+                        <responseparam type="tolerance" default="3%"/>
+                      </textline>
+                    </numericalresponse>
+                    <p style="display:inline">Hz</p>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <p style="display:inline">[mathjaxinline]^2S_{1/2}~ ~ F=2[/mathjaxinline] [mathjaxinline]~ ~ ~ ~ ~  g=[/mathjaxinline] </p>
+                    <numericalresponse inline="1" answer="0.5">
+                      <textline inline="1">
+                        <responseparam type="tolerance" default="3%"/>
+                      </textline>
+                    </numericalresponse>
+                    <p style="display:inline">Joules/sec</p>
+                  </p>
+                </li>
+              </ul>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+For the stretched states the formula is unnecessary: all the angular momenta are then aligned with each other and their magnetic moments just add. </p>
+                  </font>
+                </solution>
+              </p>
+              <p>
+                <span class="gitlink" style="float:right">
+                  <a href="https://github.com/mitocw/content-mit-latex2edx-demo/blob/master/src/form1.tex#L151">Source TeX</a>
+                </span>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical url_name="Example_problems_verticalxxx">
+          <problem display_name="Custom response" url_name="Custom_response">
+            <text>
+              <p>
+                <h2>Example of custom response</h2>
+              </p>
+              <p>
+This problem demonstrates the use of a custom python script used for checking the answer. </p>
+              <script type="text/python" system_path="python_lib">
+
+def sumtest(expect,ans):
+    try:
+        (a1,a2) = map(float,ans)
+        return (a1+a2)==10
+    except Exception as err:
+        return {'ok': False, 'msg': 'Sorry, cannot evaluate your input ' + str(ans)}
+
+</script>
+              <p>
+Enter two numbers which add up to 10: </p>
+              <p>
+                <customresponse cfn="sumtest" inline="1" expect="">
+                  <p style="display:inline">x =<textline correct_answer="1" inline="1"/></p>
+                  <br/>
+                  <p style="display:inline">y =<textline correct_answer="9" inline="1"/></p>
+                </customresponse>
+              </p>
+              <p>
+                <span class="gitlink" style="float:right">
+                  <a href="https://github.com/mitocw/content-mit-latex2edx-demo/blob/master/src/form1.tex#L189">Source TeX</a>
+                </span>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical url_name="Example_problems_verticalxxxx">
+          <problem display_name="Formula response" url_name="Formula_response">
+            <text>
+              <p>
+This problem demonstrates the use of a the &#x201C;formula response" problem. </p>
+              <p>
+Let [mathjaxinline]f(x) = a x^2 + bx + c[/mathjaxinline]. Assume the coefficients [mathjaxinline]a[/mathjaxinline], [mathjaxinline]b[/mathjaxinline], [mathjaxinline]c[/mathjaxinline] are such that [mathjaxinline]f[/mathjaxinline] has two distinct real roots. Give an equation for [mathjaxinline]\lambda[/mathjaxinline], the larger of the two roots, such that [mathjaxinline]f(\lambda )=0[/mathjaxinline]." </p>
+              <p>
+Use <tt class="tt">^</tt> for exponentiation, e.g. <tt class="tt">x^2</tt> denotes [mathjaxinline]x^2[/mathjaxinline]. Explicitly include multiplication using [mathjaxinline]{\tt *}[/mathjaxinline], e.g. [mathjaxinline]{\tt x*y}[/mathjaxinline] is [mathjaxinline]xy[/mathjaxinline]. Standard mathematical functions may be employed, e.g. [mathjaxinline]{\tt sin(x)}[/mathjaxinline], [mathjaxinline]{\tt sqrt(x)}[/mathjaxinline], etc. </p>
+              <p>
+                <p style="display:inline">[mathjaxinline]\lambda =[/mathjaxinline] </p>
+                <formularesponse inline="1" type="cs" samples="a,b,c@1,16,1:3,20,3#50" answer="(-b + sqrt(b^2-4*a*c))/(2*a)">
+                  <formulaequationinput size="60" inline="1" math="1">
+                    <responseparam type="tolerance" default="0.01"/>
+                  </formulaequationinput>
+                </formularesponse>
+              </p>
+              <p>
+                <span class="gitlink" style="float:right">
+                  <a href="https://github.com/mitocw/content-mit-latex2edx-demo/blob/master/src/form1.tex#L222">Source TeX</a>
+                </span>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+      </sequential>
+      <sequential display_name="Video and text" url_name="Video_and_text">
+        <vertical url_name="Video_and_text_vertical">
+          <html display_name="Sample show-hide text section" url_name="Sample_show-hide_text_section">
+            <p>
+              <big class="xxlarge">Sample show-hide text section</big>
+            </p>
+            <p>
+Pieces of text (and images) can be put inside a &#x201C;showhide" section, which the user can hide or show via a click. </p>
+            <p>
+              <table class="wikitable collapsible collapsed">
+                <tbody>
+                  <tr>
+                    <th> Hints and instructions for entering expressions [<a onclick="javascript:$('#ps4starkket').toggle();" href="javascript:void(0);" id="ps4starkketl">show</a>]</th>
+                  </tr>
+                  <tr id="ps4starkket" style="display:none">
+                    <td>
+                      <p>
+Note that rotations leave points on the axis of rotation unmoved. For a point [mathjaxinline](\theta , \phi )[/mathjaxinline] specified in polar coordinates on the surface of the <a href="http://en.wikipedia.org/wiki/Bloch_sphere">Bloch sphere</a>, the corresponding two-level quantum state is </p>
+                      <table id="a0000000002" cellpadding="7" width="100%" cellspacing="0" class="eqnarray" style="table-layout:auto">
+                        <tr id="a0000000003">
+                          <td style="width:40%; border:none">&#xA0;</td>
+                          <td style="vertical-align:middle;                                    text-align:right; border:none">
+	    [mathjaxinline]\displaystyle |\psi \rangle  = \cos \frac{\theta }{2} |a\rangle  + e^{i\phi }\sin \frac{\theta }{2} |b\rangle  \, .[/mathjaxinline]
+        </td>
+                          <td style="width:40%; border:none">&#xA0;</td>
+                          <td style="width:20%; border:none" class="eqnnum">
+                            <span>(<span>1</span>)</span>
+                          </td>
+                        </tr>
+                      </table>
+                      <p>
+Enter the state using the vertical bar [mathjaxinline]{\tt |}[/mathjaxinline] and greater-than symbol [mathjaxinline]{\tt &gt;}[/mathjaxinline] to delineate a &#x201C;ket" and enter [mathjaxinline]\omega _0[/mathjaxinline] as [mathjaxinline]{\tt omega\_ 0}[/mathjaxinline] as usual. </p>
+                      <p>
+Expressions like [mathjaxinline]{\tt (2*|a&gt; + |b&gt;)/sqrt(3)}[/mathjaxinline] are legal input (remember to include [mathjaxinline]{\tt *}[/mathjaxinline] to denote multiplication, for coefficients in front of kets). </p>
+                      <p>
+Standard mathematical functions may be employed, e.g. [mathjaxinline]{\tt sin(x)}[/mathjaxinline], [mathjaxinline]{\tt sqrt(x)}[/mathjaxinline], [mathjaxinline]{\tt arccos(x)}[/mathjaxinline], [mathjaxinline]{\tt arctan(x)}[/mathjaxinline], etc. </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </p>
+          </html>
+        </vertical>
+        <vertical url_name="Video_and_text_verticalx">
+          <video url_name="week0_intro" display_name="Introduction to 6.SFMx" youtube="1.0:VfOMvuHcJi0"/>
         </vertical>
       </sequential>
     </chapter>
