@@ -4,5 +4,37 @@
 Here are a number of personality traits that may or may not apply to you. Please select the number next to each statement to indicate the extent to which you agree or disagree with that statement. You should rate the extent to which the pair of traits applies to you, even if one characteristic applies more strongly than the other. </p>
     <p>
 I see myself as: </p>
+    <ul class="itemize">
+      <li>
+        <p>
+          <p style="display:inline">
+            <tt class="tt">5.2&#xA0;&#xA0;&#xA0;</tt>
+          </p>
+          <optionresponse inline="1">
+            <optioninput options="('noneType','int','float')" correct="float" inline="1"/>
+          </optionresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <p style="display:inline">
+            <tt class="tt">3/2&#xA0;&#xA0;&#xA0;</tt>
+          </p>
+          <optionresponse inline="1">
+            <optioninput options="('noneType','int','float')" correct="int" inline="1"/>
+          </optionresponse>
+        </p>
+      </li>
+      <li>
+        <p>
+          <p style="display:inline">
+            <tt class="tt">1+[]&#xA0;&#xA0;&#xA0;</tt>
+          </p>
+          <optionresponse inline="1">
+            <optioninput options="('noneType','int','float')" correct="noneType" inline="1"/>
+          </optionresponse>
+        </p>
+      </li>
+    </ul>
   </text>
 </problem>
