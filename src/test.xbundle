@@ -2,7 +2,7 @@
   <metadata/>
   <course number="CA.1" display_name="Collaborative Assessment" semester="1" org="MITx">
     <chapter display_name="Introduction" url_name="Introduction">
-      <html display_name="Hello!" url_name="Hello!">
+      <html display_name="Hello" url_name="Hello">
         <p>
 Welcome to the collaborative assessment demo! </p>
       </html>
