@@ -1,0 +1,229 @@
+<document>
+
+<div class="navigation">
+
+
+
+</div>
+
+<div><p>
+<course number="CA.1" display_name="Collaborative Assessment" attrib_string="semester=&quot;1&quot;"><p>
+<chapter display_name="Introduction" attrib_string=""><p>
+<sequential display_name="Introduction to Collaborative Assessment" attrib_string=""><p>
+<vertical attrib_string=""><p>
+<html display_name="intro" attrib_string=""><p>
+Welcome to the collaborative assessment demo! </p></html> </p></vertical> </p></sequential> </p></chapter>  </p><p>
+<chapter display_name="Form1" attrib_string=""><sequential display_name="Example problems" attrib_string=""><vertical attrib_string=""><p>
+edXproblemTIPI </p><p>
+Here are a number of personality traits that may or may not apply to you. Please select the number next to each statement to indicate the extent to which you agree or disagree with that statement. You should rate the extent to which the pair of traits applies to you, even if one characteristic applies more strongly than the other. </p><p>
+I see myself as: </p><ul class="itemize">
+
+<li><p>
+<p style="display:inline"><tt class="tt">5.2   </tt></p> <optionresponse inline="1">
+  <optioninput options="('noneType','int','float')" correct="float" inline="1"/>
+</optionresponse> </p></li>
+<li><p>
+<p style="display:inline"><tt class="tt">3/2   </tt></p> <optionresponse inline="1">
+  <optioninput options="('noneType','int','float')" correct="int" inline="1"/>
+</optionresponse> </p></li>
+<li><p>
+<p style="display:inline"><tt class="tt">1+[]   </tt></p> <optionresponse inline="1">
+  <optioninput options="('noneType','int','float')" correct="noneType" inline="1"/>
+</optionresponse> </p></li>
+</ul><p>
+<span class="gitlink" style="float:right"><a href="https://github.com/mitocw/content-mit-latex2edx-demo/blob/master/src/form1.tex#L22">Source TeX</a></span> </p></vertical></sequential></chapter></p></course><problem><text></text></problem> </p><p>
+<problem display_name="String response"><text><p>
+What state is Detroit in? </p><p>
+<stringresponse answer="Michigan" type="">
+  <textline/>
+</stringresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+Explanations can also be provided inside: </p><pre>
+\begin{edXsolution}
+... 
+\end{edXsolution}
+</pre></font></solution> </p><p>
+<span class="gitlink" style="float:right"><a href="https://github.com/mitocw/content-mit-latex2edx-demo/blob/master/src/form1.tex#L45">Source TeX</a></span> </p></text></problem> </p><p>
+<vertical attrib_string=""></vertical> </p><p>
+<vertical attrib_string=""><p>
+<problem display_name="Multiple choice single answer" attrib_string=""><text><p>
+What color is the sky on a clear sunny day? </p><script type="text/python" system_path="python_lib">
+
+aset = [ 'Red',
+         'Green',
+         'Blue',
+         'Black',
+      ]
+
+(ans1,ans2,ans3,ans4) = aset
+
+</script><p>
+<multiplechoiceresponse>
+  <choicegroup direction="vertical">
+    <choice correct="false" name="1">
+      <text> $ans1</text>
+    </choice>
+    <choice correct="false" name="2">
+      <text> $ans2</text>
+    </choice>
+    <choice correct="true" name="3">
+      <text> $ans3</text>
+    </choice>
+    <choice correct="false" name="4">
+      <text> $ans4</text>
+    </choice>
+  </choicegroup>
+</multiplechoiceresponse> </p><p>
+<span class="gitlink" style="float:right"><a href="https://github.com/mitocw/content-mit-latex2edx-demo/blob/master/src/form1.tex#L76">Source TeX</a></span> </p></text></problem> </p><p>
+<problem display_name="Multiple choice multiple answers" attrib_string=""><text><p>
+What are the best computer programming language? Choose <em>all</em> which apply: </p><script type="text/python" system_path="python_lib">
+
+aset = [ 'Cobol',
+         'Pascal',
+         'Python',
+         'C++',
+         'Clu',
+         'Forth',
+      ]
+
+(ans1,ans2,ans3,ans4,ans5,ans6) = aset
+
+</script><p>
+<choiceresponse>
+  <checkboxgroup direction="vertical">
+    <choice correct="false" name="1">
+      <text> $ans1</text>
+    </choice>
+    <choice correct="false" name="2">
+      <text> $ans2</text>
+    </choice>
+    <choice correct="true" name="3">
+      <text> $ans3</text>
+    </choice>
+    <choice correct="true" name="4">
+      <text> $ans4</text>
+    </choice>
+    <choice correct="false" name="5">
+      <text> $ans5</text>
+    </choice>
+    <choice correct="false" name="6">
+      <text> $ans6</text>
+    </choice>
+  </checkboxgroup>
+</choiceresponse> </p><p>
+<span class="gitlink" style="float:right"><a href="https://github.com/mitocw/content-mit-latex2edx-demo/blob/master/src/form1.tex#L103">Source TeX</a></span> </p></text></problem> </p></vertical> </p><p>
+<vertical attrib_string=""><p>
+<problem display_name="Numerical response"><text><p>
+<h2>Example of numerical response</h2> </p><p>
+What is the numerical value of [mathjaxinline]\pi[/mathjaxinline]? </p><p>
+<numericalresponse answer="3.14159">
+  <textline>
+    <responseparam type="tolerance" default="0.01"/>
+  </textline>
+</numericalresponse> </p><p>
+<span class="gitlink" style="float:right"><a href="https://github.com/mitocw/content-mit-latex2edx-demo/blob/master/src/form1.tex#L122">Source TeX</a></span> </p></text></problem> </p><p>
+<problem display_name="Numerical response with inline labels" attrib_string=""><text><p>
+Numerical response questions can have inline labels, both before and after the input box: </p><ul class="itemize">
+
+<li><p>
+<p style="display:inline">[mathjaxinline]^2P_{3/2}~ ~ F=3[/mathjaxinline] [mathjaxinline]~ ~ ~ ~ ~  g=[/mathjaxinline] </p> <numericalresponse inline="1" answer="0.66666">
+  <textline inline="1">
+    <responseparam type="tolerance" default="3%"/>
+  </textline>
+</numericalresponse> <p style="display:inline">Hz</p> </p></li>
+<li><p>
+<p style="display:inline">[mathjaxinline]^2S_{1/2}~ ~ F=2[/mathjaxinline] [mathjaxinline]~ ~ ~ ~ ~  g=[/mathjaxinline] </p> <numericalresponse inline="1" answer="0.5">
+  <textline inline="1">
+    <responseparam type="tolerance" default="3%"/>
+  </textline>
+</numericalresponse> <p style="display:inline">Joules/sec</p> </p></li>
+</ul><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+For the stretched states the formula is unnecessary: all the angular momenta are then aligned with each other and their magnetic moments just add. </p></font></solution> </p><p>
+<span class="gitlink" style="float:right"><a href="https://github.com/mitocw/content-mit-latex2edx-demo/blob/master/src/form1.tex#L151">Source TeX</a></span> </p></text></problem> </p></vertical> </p><p>
+<vertical attrib_string=""><p>
+<problem display_name="Custom response"><text><p>
+<h2>Example of custom response</h2> </p><p>
+This problem demonstrates the use of a custom python script used for checking the answer. </p><script type="text/python" system_path="python_lib">
+
+def sumtest(expect,ans):
+    try:
+        (a1,a2) = map(float,ans)
+        return (a1+a2)==10
+    except Exception as err:
+        return {'ok': False, 'msg': 'Sorry, cannot evaluate your input ' + str(ans)}
+
+</script><p>
+Enter two numbers which add up to 10: </p><p>
+<customresponse cfn="sumtest" inline="1" expect="">
+  <p style="display:inline">x =<textline correct_answer="1" inline="1"/></p>
+  <br/>
+  <p style="display:inline">y =<textline correct_answer="9" inline="1"/></p>
+</customresponse></p><p>
+<span class="gitlink" style="float:right"><a href="https://github.com/mitocw/content-mit-latex2edx-demo/blob/master/src/form1.tex#L189">Source TeX</a></span> </p></text></problem> </p></vertical> </p><p>
+<vertical attrib_string=""><p>
+<problem display_name="Formula response"><text><p>
+This problem demonstrates the use of a the “formula response" problem. </p><p>
+Let [mathjaxinline]f(x) = a x^2 + bx + c[/mathjaxinline]. Assume the coefficients [mathjaxinline]a[/mathjaxinline], [mathjaxinline]b[/mathjaxinline], [mathjaxinline]c[/mathjaxinline] are such that [mathjaxinline]f[/mathjaxinline] has two distinct real roots. Give an equation for [mathjaxinline]\lambda[/mathjaxinline], the larger of the two roots, such that [mathjaxinline]f(\lambda )=0[/mathjaxinline]." </p><p>
+Use <tt class="tt">^</tt> for exponentiation, e.g. <tt class="tt">x^2</tt> denotes [mathjaxinline]x^2[/mathjaxinline]. Explicitly include multiplication using [mathjaxinline]{\tt *}[/mathjaxinline], e.g. [mathjaxinline]{\tt x*y}[/mathjaxinline] is [mathjaxinline]xy[/mathjaxinline]. Standard mathematical functions may be employed, e.g. [mathjaxinline]{\tt sin(x)}[/mathjaxinline], [mathjaxinline]{\tt sqrt(x)}[/mathjaxinline], etc. </p><p>
+<p style="display:inline">[mathjaxinline]\lambda =[/mathjaxinline] </p> <formularesponse inline="1" type="cs" samples="a,b,c@1,16,1:3,20,3#50" answer="(-b + sqrt(b^2-4*a*c))/(2*a)">
+  <formulaequationinput size="60" inline="1" math="1">
+    <responseparam type="tolerance" default="0.01"/>
+  </formulaequationinput>
+</formularesponse></p><p>
+<span class="gitlink" style="float:right"><a href="https://github.com/mitocw/content-mit-latex2edx-demo/blob/master/src/form1.tex#L222">Source TeX</a></span> </p></text></problem> </p></vertical> </p><p>
+<sequential attrib_string=""></sequential> </p><p>
+<sequential display_name="Video and text" attrib_string=""><p>
+<vertical attrib_string=""><html display_name="Sample show-hide text section" attrib_string=""><p>
+<big class="xxlarge">Sample show-hide text section</big> </p><p>
+Pieces of text (and images) can be put inside a “showhide" section, which the user can hide or show via a click. </p><p>
+<edxshowhide id="ps4starkket" description="Hints and instructions for entering expressions"><p>
+Note that rotations leave points on the axis of rotation unmoved. For a point [mathjaxinline](\theta , \phi )[/mathjaxinline] specified in polar coordinates on the surface of the <a href="http://en.wikipedia.org/wiki/Bloch_sphere">Bloch sphere</a>, the corresponding two-level quantum state is </p><table id="a0000000002" cellpadding="7" width="100%" cellspacing="0" class="eqnarray">
+<tr id="a0000000003">
+    
+    <td style="width:40%">&#160;</td>
+    
+    
+        <td style="vertical-align:middle;                                    text-align:right">
+	    [mathjaxinline]\displaystyle |\psi \rangle  = \cos \frac{\theta }{2} |a\rangle  + e^{i\phi }\sin \frac{\theta }{2} |b\rangle  \, .[/mathjaxinline]
+        </td>
+    
+    
+    
+    <td style="width:40%">&#160;</td>
+    <td style="width:20%" class="eqnnum"><span>(<span>1</span>)</span></td>
+</tr>
+</table><p>
+Enter the state using the vertical bar [mathjaxinline]{\tt |}[/mathjaxinline] and greater-than symbol [mathjaxinline]{\tt &gt;}[/mathjaxinline] to delineate a “ket" and enter [mathjaxinline]\omega _0[/mathjaxinline] as [mathjaxinline]{\tt omega\_ 0}[/mathjaxinline] as usual. </p><p>
+Expressions like [mathjaxinline]{\tt (2*|a&gt; + |b&gt;)/sqrt(3)}[/mathjaxinline] are legal input (remember to include [mathjaxinline]{\tt *}[/mathjaxinline] to denote multiplication, for coefficients in front of kets). </p><p>
+Standard mathematical functions may be employed, e.g. [mathjaxinline]{\tt sin(x)}[/mathjaxinline], [mathjaxinline]{\tt sqrt(x)}[/mathjaxinline], [mathjaxinline]{\tt arccos(x)}[/mathjaxinline], [mathjaxinline]{\tt arctan(x)}[/mathjaxinline], etc. </p></edxshowhide> </p></html></vertical> </p><p>
+<vertical attrib_string=""><p>
+<edxxml><video url_name="week0_intro" display_name="Introduction to 6.SFMx" youtube="1.0:VfOMvuHcJi0" /></edxxml> </p></vertical> </p></sequential> </p><p>
+<chapter attrib_string=""></chapter>  </p><p>
+<chapter display_name="TIPI" attrib_string=""><sequential display_name="Personality Test" attrib_string=""><p>
+<problem display_name="TIPI"><text><p>
+Here are a number of personality traits that may or may not apply to you. Please select the number next to each statement to indicate the extent to which you agree or disagree with that statement. You should rate the extent to which the pair of traits applies to you, even if one characteristic applies more strongly than the other. </p><p>
+I see myself as: </p><ul class="itemize">
+
+<li><p>
+<p style="display:inline">Extraverted, enthusiastic.   </p> <optionresponse inline="1">
+  <optioninput options="('1 = Disagree strongly','2 Disagree moderately','3 = Disagree a little','poop','5 = crap house')" correct="4 = Neither agree nor disagree" inline="1"/>
+</optionresponse> </p></li>
+<li><p>
+<p style="display:inline">Extraverted, enthusiastic.   </p> <optionresponse inline="1">
+  <optioninput options="('noneType','int','float')" correct="noneType" inline="1"/>
+</optionresponse> </p></li>
+</ul></text></problem> </p></sequential> </chapter>  </p><p>
+<course attrib_string=""></course> </p></div>
+
+
+
+
+
+<div class="navigation">
+
+
+
+</div>
+
+</document>
