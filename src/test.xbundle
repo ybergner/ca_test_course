@@ -324,26 +324,6 @@ I see myself as: </p>
                   </optionresponse>
                 </p>
               </li>
-              <li>
-                <p>
-                  <p style="display:inline">
-                    <tt class="tt">3/2&#xA0;&#xA0;&#xA0;</tt>
-                  </p>
-                  <optionresponse inline="1">
-                    <optioninput options="('noneType','int','float')" correct="int" inline="1"/>
-                  </optionresponse>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <p style="display:inline">
-                    <tt class="tt">1+[]&#xA0;&#xA0;&#xA0;</tt>
-                  </p>
-                  <optionresponse inline="1">
-                    <optioninput options="('noneType','int','float')" correct="noneType" inline="1"/>
-                  </optionresponse>
-                </p>
-              </li>
             </ul>
           </text>
         </problem>
