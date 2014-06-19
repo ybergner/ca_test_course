@@ -1,6 +1,5 @@
 <chapter display_name="Form1">
   <sequential display_name="Part1" url_name="Part1">
-    <randomize>
     <vertical url_name="Part1_vertical">
       <problem url_name="String_response"/>
     </vertical>
@@ -18,7 +17,6 @@
     <vertical url_name="Part1_verticalxxxx">
       <problem url_name="Formula_response"/>
     </vertical>
-    </randomize>
   </sequential>
   <sequential display_name="Part2" url_name="Part2">
     <vertical url_name="Part2_vertical">

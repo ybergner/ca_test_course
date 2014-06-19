@@ -7,11 +7,9 @@ I see myself as: </p>
     <ul class="itemize">
       <li>
         <p>
-          <p style="display:inline">
-            <tt class="tt">5.2&#xA0;&#xA0;&#xA0;</tt>
-          </p>
+          <p style="display:inline">Extraverted, enthusiastic.&#xA0;&#xA0;&#xA0;</p>
           <optionresponse inline="1">
-            <optioninput options="('noneType','int','float')" correct="float" inline="1"/>
+            <optioninput options="('Disagree strongly','Neither agree nor disagree','Agree strongly')" correct="float" inline="1"/>
           </optionresponse>
         </p>
       </li>
