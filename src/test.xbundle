@@ -320,7 +320,15 @@ I see myself as: </p>
                 <p>
                   <p style="display:inline">Extraverted, enthusiastic.&#xA0;&#xA0;&#xA0;</p>
                   <optionresponse inline="1">
-                    <optioninput options="('Disagree strongly','Neither agree nor disagree','Agree strongly')" correct="float" inline="1"/>
+                    <optioninput options="('Disagree','Neither agree nor disagree','Agree')" correct="float" inline="1"/>
+                  </optionresponse>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <p style="display:inline">Critical, quarrelsome.&#xA0;&#xA0;&#xA0;</p>
+                  <optionresponse inline="1">
+                    <optioninput options="('Disagree','Neither agree nor disagree','Agree')" correct="float" inline="1"/>
                   </optionresponse>
                 </p>
               </li>
